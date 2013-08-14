@@ -92,3 +92,15 @@ end
 class PrintableImageTarget < ImageTargetWithWhiteFrame
 	
 end
+
+
+
+image_target1 = ImageTarget.new(600, 600)
+image_target1.save_as_file
+puts "image_target1 width: #{image_target1.width}"
+puts "image_target1 length: #{image_target1.length}"
+
+ar_image_target1 = ARImageTarget.new(image_target1)
+ar_image_target1.save_as_file
+puts "ar_image_target1 width: #{ar_image_target1.width}"
+puts "ar_image_target1 length: #{ar_image_target1.length}"
